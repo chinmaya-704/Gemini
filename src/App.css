@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.recent-entry{
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding: 10px;padding-right: 40px;
+  border-radius: 50px;
+  color: #282828;
+  
+}
+
+.recent-entry:hover{
+  background-color: #303030;
+}
+
+.bottom-item{
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.outfit{
+  font-family: "Outfit", sans-serif;
+}
+
+.greet span{
+  background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns:  repeat(auto-fill,minmax(180px,1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card{
+  height: 200px;
+  padding: 15px;
+  background-color: #131314;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card img{
+  padding: 5px;
+  position: absolute;
+  border-radius: 20px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.card .msg{
+  border-radius: 0px;
+}
+
+.card p{
+  color: whitesmoke;  
+  font-size: 17px;
+}
+
+.card:hover{
+  background-color: #2a2a2a;
+}
+
+.result::-webkit-scrollbar{
+  display: none;
+}
+
+.loader hr{
+  border-radius: 4px;
+  border: none;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #9ed7ff, #ffffff,#9ed7ff);
+  background-size: 800px 50px;
+  height: 20px;
+  animation: loader 1s infinite linear;
+}
+
+.sidebar{
+  min-height: 100vh;
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #131314;
+  padding: 16px 24px;
+  
+}
+
+@keyframes loader{
+  0%{
+    background-position: -800px 0px;
+  }
+  100%{
+    background-position: 800px 0px;
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#root{
+  animation: fadeIn 1s;
+}
+
+.sidebar .recent{
+  animation: fadeIn 1.5s;
+}
+
+@media (max-width:600px){
+  .sidebar{
+    display: none;
+  }
+  .main-bottom input{
+    flex: none;
+    width: 150px;
+  }
+  .main-bottom img{
+    width:20px
+  }
+  .search-box{
+    padding: 5px 10px;
+  }
+  .search-box div{
+    gap:5px;
+  }
+
+}
