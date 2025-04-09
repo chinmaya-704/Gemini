@@ -91,7 +91,7 @@ const Main = () => {
                </div>
             </div>
             <p className="bottom-info text-xs mx-4 my-auto text-center font-semibold text-gray-300">
-                  Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Geminni Apps
+                  Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps
             </p>
             
          </div>
